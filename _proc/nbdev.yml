@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "pysrtkit"
+  site-url: "https://kurianbenoy.github.io/pysrtkit"
+  description: "A modern python library which serves as alternative to pysrt"
+  repo-branch: main
+  repo-url: "https://github.com/kurianbenoy/pysrtkit"
