@@ -1,0 +1,52 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "pysrtkit",
+    "section": "",
+    "text": "Install latest from the GitHub [repository][repo]:\n$ pip install git+https://github.com/kurianbenoy/pysrtkit.git\nor from [pypi][pypi]\n$ pip install pysrtkit",
+    "crumbs": [
+      "pysrtkit"
+    ]
+  },
+  {
+    "objectID": "index.html#installation",
+    "href": "index.html#installation",
+    "title": "pysrtkit",
+    "section": "",
+    "text": "Install latest from the GitHub [repository][repo]:\n$ pip install git+https://github.com/kurianbenoy/pysrtkit.git\nor from [pypi][pypi]\n$ pip install pysrtkit",
+    "crumbs": [
+      "pysrtkit"
+    ]
+  },
+  {
+    "objectID": "index.html#project-links",
+    "href": "index.html#project-links",
+    "title": "pysrtkit",
+    "section": "Project Links",
+    "text": "Project Links\n\nGithub repo: https://github.com/kurianbenoy/pysrtkit\nDocs: https://kurianbenoy.github.io/pysrtkit/\npypi: https://pypi.org/project/pysrtkit/\npypistats: https://pypistats.org/packages/pysrtkit",
+    "crumbs": [
+      "pysrtkit"
+    ]
+  },
+  {
+    "objectID": "index.html#developer-guide",
+    "href": "index.html#developer-guide",
+    "title": "pysrtkit",
+    "section": "Developer Guide",
+    "text": "Developer Guide\nIf you are new to using nbdev here are some useful pointers to get you started.",
+    "crumbs": [
+      "pysrtkit"
+    ]
+  },
+  {
+    "objectID": "00_srtfile.html",
+    "href": "00_srtfile.html",
+    "title": "pysrtkit",
+    "section": "",
+    "text": "source\n\nSubRipFile\n\n SubRipFile (items=None, eol=None, path=None, encoding='utf-8')\n\nA more or less complete user-defined wrapper around list objects.\n\nsource\n\n\nSubRipItem\n\n SubRipItem (index=0, start=None, end=None, text='', position='')\n\nInitialize self. See help(type(self)) for accurate signature.\n\nsource\n\n\nSubRipTime\n\n SubRipTime (hours=0, minutes=0, seconds=0, milliseconds=0)\n\nInitialize self. See help(type(self)) for accurate signature.\n\nsource\n\n\nTimeItemDescriptor\n\n TimeItemDescriptor (ratio, maxval=None)\n\nInitialize self. See help(type(self)) for accurate signature.\n\nsource\n\n\nComparableMixin\n\n ComparableMixin ()\n\nInitialize self. See help(type(self)) for accurate signature.\n\nsource\n\n\nInvalidTimeString\nCommon base class for all non-exit exceptions.\n\nsource\n\n\nError\nCommon base class for all non-exit exceptions.\n\nsource\n\n\nInvalidItem\nCommon base class for all non-exit exceptions.\n\nsubs = SubRipFile.open(\"../samples/example.srt\")\nlen(subs)\n\n9\n\n\n\nsubs[0].start, subs[0].end, subs[0].text\n\n(SubRipTime(0, 0, 0, 0),\n SubRipTime(0, 0, 2, 500),\n 'Welcome to the Example Subtitle File!')\n\n\n\nsubs.shift(minutes=30)\nsubs[0].start, subs[0].end, subs[0].text\n\n(SubRipTime(1, 0, 0, 0),\n SubRipTime(1, 0, 2, 500),\n 'Welcome to the Example Subtitle File!')",
+    "crumbs": [
+      "00_srtfile.html"
+    ]
+  }
+]
