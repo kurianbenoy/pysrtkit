@@ -4,7 +4,7 @@
 __all__ = ['BOMS', 'CODECS_BOMS', 'BIGGER_BOM', 'InvalidItem', 'Error', 'SubRipTime', 'ComparableMixin', 'SubRipItem',
            'SubRipFile']
 
-# %% ../nbs/00_srtfile.ipynb 2
+# %% ../nbs/00_srtfile.ipynb 1
 import re
 import os
 import sys
@@ -13,7 +13,7 @@ from collections import UserList
 from itertools import chain
 from copy import copy
 
-# %% ../nbs/00_srtfile.ipynb 3
+# %% ../nbs/00_srtfile.ipynb 2
 # Dummy classes for demonstration; replace with your actual implementations
 class InvalidItem(Exception):
     pass
@@ -106,7 +106,7 @@ class SubRipItem(ComparableMixin):
     def from_lines(cls, lines):
         if len(lines) < 2:
             raise InvalidItem()
-        lines = [l.rstrip() for l in lines]
+        lines = [line.rstrip() for line in lines]
         index = None
         if cls.TIMESTAMP_SEPARATOR not in lines[0]:
             index = lines.pop(0)
@@ -136,7 +136,7 @@ BOMS = (
 CODECS_BOMS = dict((codec, str(bom, codec)) for bom, codec in BOMS)
 BIGGER_BOM = max(len(bom) for bom, encoding in BOMS)
 
-# %% ../nbs/00_srtfile.ipynb 4
+# %% ../nbs/00_srtfile.ipynb 3
 class SubRipFile(UserList):
     ERROR_PASS = 0
     ERROR_LOG = 1
