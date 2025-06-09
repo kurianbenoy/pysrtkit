@@ -1,6 +1,6 @@
-from pysrt.srttime import SubRipTime
-from pysrt.srtitem import SubRipItem
-from pysrt.srtfile import SubRipFile
+from pysrtkit.srtfile import SubRipTime
+from pysrtkit.srtfile import SubRipItem
+from pysrtkit.srtfile import SubRipFile
 
 __version__ = "0.0.4"
 
